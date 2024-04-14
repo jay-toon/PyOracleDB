@@ -1,0 +1,3 @@
+Oracle12c WILL require you to use your own login. It is not unlicensed or cracked software.
+
+This should've been distributed through your University. If you cannot login to the application, I cannot help you legally nor personally.
