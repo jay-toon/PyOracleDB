@@ -1,0 +1,29 @@
+ORACLR_CONNECTION_DATA =
+  (DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = IPC)(KEY = EXTPROC1521))
+    )
+    (CONNECT_DATA =
+      (SID = CLRExtProc)
+      (PRESENTATION = RO)
+    )
+  )
+-- NOT ON NETWORK
+STUDENT =
+  (DESCRIPTION =
+    (ADDRESS = (PROTOCOL = TCP)(HOST = oracle.northampton.ac.uk)(PORT = 1521))
+    (CONNECT_DATA =
+      (SERVER = DEDICATED)
+      (SERVICE_NAME = student.nene.ac.uk)
+    )
+  )
+
+-- ON NETWORK
+DATABASES =  
+  (DESCRIPTION =  
+    (ADDRESS = (PROTOCOL = TCP)(HOST = srv-oracle-01.nene.ac.uk)(PORT = 1521))  
+    (CONNECT_DATA =  
+      (SERVER = DEDICATED)  
+      (SERVICE_NAME = student.nene.ac.uk)  
+    )  
+  ) 
