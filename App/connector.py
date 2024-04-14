@@ -6,11 +6,3 @@
     It uses syntax similar to OracleDB, with a console to ease functionality and a developers life.
 '''
 
-def connect(username, password):
-    try:
-        connection = cx_Oracle.connect(username, password, "localhost:1521/xe")
-        return True
-    except cx_Oracle.DatabaseError as e:
-        error, = e.args
-        print(error.message)
-        return False
